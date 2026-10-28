@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
 public:
 
-    string minWindow(string s, string t) {
+    string minWindow(const string& s, const string& t) {
         int m = static_cast<int>(s.size());
         if (t.empty() || s.size() < t.size()) return "";
         array<int, 128> balance{};
