@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "topic": "Arrays, sorting, hashing",
+    "method": "twoSum",
+    "path": "problems/easy/0001-two-sum",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: enumerate pairs"
+      },
+      {
+        "name": "sorting",
+        "title": "Better: sort indexed values and use two pointers"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal expected time: one-pass hash map"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "valid-parentheses",
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "topic": "Stacks",
+    "method": "isValid",
+    "path": "problems/easy/0020-valid-parentheses",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: repeated pair removal"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: stack of unmatched openings"
+      }
+    ]
+  },
+  {
+    "id": 704,
+    "slug": "binary-search",
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "topic": "Binary search",
+    "method": "search",
+    "path": "problems/easy/0704-binary-search",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Baseline: linear search"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: iterative binary search"
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "slug": "reverse-linked-list",
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "topic": "Linked lists, recursion",
+    "method": "reverseList",
+    "path": "problems/easy/0206-reverse-linked-list",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Baseline: store node pointers and relink"
+      },
+      {
+        "name": "recursive",
+        "title": "Alternative: recursive rewiring"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal auxiliary space: iterative rewiring"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "slug": "binary-tree-level-order-traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "Medium",
+    "topic": "Trees, queues, BFS",
+    "method": "levelOrder",
+    "path": "problems/medium/0102-binary-tree-level-order-traversal",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Baseline: repeat traversal for every depth"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: breadth-first traversal with a queue"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "slug": "number-of-islands",
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "topic": "Graphs, connected components, BFS",
+    "method": "numIslands",
+    "path": "problems/medium/0200-number-of-islands",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: rediscover each component from every land cell"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: discover each component once using shared visitation"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "slug": "subsets",
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "topic": "Bit manipulation, backtracking",
+    "method": "subsets",
+    "path": "problems/medium/0078-subsets",
+    "approaches": [
+      {
+        "name": "bitmask",
+        "title": "Enumeration: interpret a bitmask as a subset"
+      },
+      {
+        "name": "optimal",
+        "title": "Output-optimal alternative: backtracking"
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "slug": "coin-change",
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "topic": "Recursion, memoization, dynamic programming",
+    "method": "coinChange",
+    "path": "problems/medium/0322-coin-change",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: enumerate coin choices recursively"
+      },
+      {
+        "name": "memoized",
+        "title": "Better: memoize each remaining amount"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal practical DP: bottom-up tabulation"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "merge-k-sorted-lists",
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "topic": "Linked lists, heaps, divide and conquer",
+    "method": "mergeKLists",
+    "path": "problems/hard/0023-merge-k-sorted-lists",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: scan every current list head"
+      },
+      {
+        "name": "heap",
+        "title": "Optimal time: min-heap of current heads"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal time with constant workspace: bottom-up pairwise merging"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "trapping-rain-water",
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "topic": "Prefix and suffix maxima, two pointers",
+    "method": "trap",
+    "path": "problems/hard/0042-trapping-rain-water",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: scan left and right boundaries for every bar"
+      },
+      {
+        "name": "prefix_suffix",
+        "title": "Better: precompute prefix and suffix maxima"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal auxiliary space: two pointers"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "slug": "minimum-window-substring",
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "topic": "Frequency counting, sliding windows",
+    "method": "minWindow",
+    "path": "problems/hard/0076-minimum-window-substring",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: recount every candidate substring"
+      },
+      {
+        "name": "incremental",
+        "title": "Better: reuse counts while extending each start position"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: expand and shrink a sliding window"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "slug": "largest-rectangle-in-histogram",
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "topic": "Range enumeration, monotonic stacks",
+    "method": "largestRectangleArea",
+    "path": "problems/hard/0084-largest-rectangle-in-histogram",
+    "approaches": [
+      {
+        "name": "brute_force",
+        "title": "Brute force: recompute the minimum in every interval"
+      },
+      {
+        "name": "incremental",
+        "title": "Better: maintain the interval minimum as it grows"
+      },
+      {
+        "name": "optimal",
+        "title": "Optimal: increasing stack of bar indices"
+      }
+    ]
+  }
+]
