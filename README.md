@@ -8,6 +8,8 @@ A guided overview of DSA through **12 foundational LeetCode problems: 4 Easy, 4 
 
 There are **31 approaches and 93 implementation files**. Some problems have two useful approaches; others have three. Equal-performance alternatives are identified explicitly, including output-optimal subset enumeration and heap versus pairwise merging.
 
+**Practice directly on LeetCode. No local compiler, installation, or setup is needed.** Open a lesson's LeetCode link, choose C, C++, or Python3, and paste one solution file into the editor. Use the `optimal` version for the recommended submission.
+
 ## Who this is for
 
 You should know variables, conditions, loops, arrays, and functions in at least one language. The lessons introduce the needed data structures before using them. C readers will benefit from basic pointer knowledge; the linked-list lesson develops that skill further.
@@ -37,7 +39,7 @@ The Hard label describes the LeetCode exercise, not an expectation that beginner
 2. Understand the direct baseline before studying its limitations.
 3. Follow each improvement, its correctness argument, and its dry run.
 4. Read one language implementation, then compare the other two if useful.
-5. Try the linked LeetCode problem and run the local tests.
+5. Open the linked LeetCode problem, choose your language, paste one solution, and use LeetCode's Run or Submit button.
 6. Explain the final invariant and complexity without looking at the code.
 
 Each lesson includes algorithm steps, correctness reasoning, time and space bounds, edge cases, memory-ownership or mutation notes, and the pattern to remember. Source code is linked beside each approach rather than duplicated inside long Markdown code blocks.
@@ -59,21 +61,20 @@ Each lesson includes algorithm steps, correctness reasoning, time and space boun
 | Frequency counts and sliding windows | Minimum Window Substring |
 | Monotonic stacks and amortized analysis | Largest Rectangle in Histogram |
 
-## Run and submit
+## Submit on LeetCode
 
-Use **C17**, **C++17**, or **Python 3.11+**. Solutions need only standard libraries. C data structures such as hash tables, queues, and heaps are implemented directly, with no uthash dependency.
+1. Open the **Practice** link for a problem in the table above.
+2. Select **C**, **C++**, or **Python3** in LeetCode's editor.
+3. Open that language's folder in the lesson and copy exactly one approach file.
+4. Paste it into LeetCode and click **Run** or **Submit**.
 
-```sh
-python tests/run.py
-```
+The `optimal` file is the recommended full-constraint solution. Brute-force and recursive alternatives teach the progression and may exceed LeetCode's time or recursion limits on large inputs.
 
-The full suite needs GCC/Clang C and C++ compilers on your PATH. For Python-only checks:
+Files already use LeetCode's function or `Solution` method interfaces. LeetCode supplies the list and tree node definitions when needed. There is no `main` function or custom input/output setup to add.
 
-```sh
-python tests/run.py --languages python
-```
+## Optional repository validation
 
-See [RUNNING.md](RUNNING.md) for compiler configuration, memory checks, LeetCode submission conventions, and the [test suite](tests/run.py).
+The [automated checks](https://github.com/SohamWadhwa/DSA-LOOM/actions) are for maintaining and verifying the repository. They are separate from the LeetCode learning workflow. Contributors who want to run those checks locally can follow the optional instructions in [RUNNING.md](RUNNING.md).
 
 ## Sources and license
 
